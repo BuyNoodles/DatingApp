@@ -2,4 +2,4 @@
 
 MODE 99,13
 
-dotnet watch
+ng serve
