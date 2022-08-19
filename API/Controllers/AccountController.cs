@@ -21,7 +21,6 @@ namespace API.Controllers
         }
 
         [HttpPost("register")]
-
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
             if (await UserExists(registerDto.Username)) return BadRequest("Username is taken");
