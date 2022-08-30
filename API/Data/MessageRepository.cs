@@ -35,7 +35,7 @@ namespace API.Data
                 .Include(u => u.Sender)
                 .Include(u => u.Recipient)
                 .SingleOrDefaultAsync(x => x.Id == id);
-        }
+        } 
 
         public async Task<PagedList<MessageDto>> GetMessagesForUser(MessageParams messageParams)
         {
