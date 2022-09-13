@@ -35,7 +35,7 @@ namespace API.Controllers
         }
 
         [HttpPost("edit-roles/{username}")]
-        public async Task<ActionResult> EditRoles(string username, [FromQuery]string roles)
+        public async Task<ActionResult> EditRoles(string username, [FromQuery] string roles)
         {
             var selectedRoles = roles.Split(",").ToArray();
 
@@ -58,7 +58,7 @@ namespace API.Controllers
 
         [Authorize(Policy = "ModeratePhotoRole")]
         [HttpGet("photos-to-moderate")]
-        public async Task<ActionResult> GetPhotosForModeration()
+        public ActionResult GetPhotosForModeration()
         {
             return Ok("Only admins or moderators can see this");
         }

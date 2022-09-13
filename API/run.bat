@@ -2,4 +2,8 @@
 
 MODE 99,13
 
-dotnet watch
+title Dating App API
+
+cd "C:\Users\Korisnik\Documents\vezba\DatingApp\API"
+
+dotnet watch run
