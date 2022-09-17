@@ -4,7 +4,7 @@
 
 namespace API.Data.Migrations
 {
-    public partial class UserPasswordAdded : Migration
+    public partial class PostgresFix : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
